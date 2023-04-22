@@ -1,0 +1,16 @@
+flask
+
+#to create forms for main tables
+Flask-WTF
+
+#for the User Interface - the Bootstrap library
+Bootstrap-Flask
+
+#for the connection with the mysql database
+flask-mysqldb
+
+#for the authentication in the web-app
+Flask-Login
+
+#for testing
+pytest
