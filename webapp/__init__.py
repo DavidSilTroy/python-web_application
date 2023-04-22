@@ -14,11 +14,9 @@ def create_app():
     app.config.from_object(Config)
 
 
-    @app.route('/')
-    @app.route('/index')
-    @app.route('/home')
-    def home():
-        return "hello world! :)" 
+    #initialize blueprints
+    from webapp.blueprints.home.routes import home_views
+    app.register_blueprint(home_views, url_prefix="/")
 
 
     return app
